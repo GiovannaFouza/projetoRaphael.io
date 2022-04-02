@@ -182,15 +182,15 @@
                                 <p><b>Escolha uma área</b></p>
 
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" onclick="Mudarestado('block', 'none', 'none')">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" onclick="habilitarDiv('block', 'none', 'none')">
                                     <label class="form-check-label" id="area" for="inlineRadio1">TI</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" onclick="Mudarestado('none', 'block', 'none')">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" onclick="habilitarDiv('none', 'block', 'none')">
                                     <label class="form-check-label" id="area" for="inlineRadio1">RH</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" onclick="Mudarestado('none', 'none', 'block')">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" onclick="habilitarDiv('none', 'none', 'block')">
                                     <label class="form-check-label" id="area" for="inlineRadio1">Administração</label>
                                 </div>
                                 <br><br>
@@ -421,7 +421,7 @@
     </script>
 
     <script type="text/javascript">
-        function Mudarestado(el1, el2, el3) {
+        function habilitarDiv(el1, el2, el3) {
 
             document.getElementById("minhaDiv").style.display = el1;
             document.getElementById("minhaDiv1").style.display = el2;
